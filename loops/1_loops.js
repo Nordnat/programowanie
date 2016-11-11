@@ -1,39 +1,38 @@
+let number = 12;
+
 /**
- * While Loop
- * @param countTo
+ * @param {number} countTo sets the boundry imit of loop iteration
  */
 function whileLoop (countTo) {
-    var i = 1;
+    let i = 0;
 
-    while (i <= countTo) {
-        console.log(i + " ");
+    while (i < countTo) {
+        console.log(i);
         i += 1;
     }
 }
 
 /**
- * do while loop
- * @param countTo
+ * @param {number} countTo sets the boundry imit of loop iteration
  */
 function doWhileLoop (countTo) {
-    var i = 1;
+    let i = 0;
 
     do {
-        console.log(i + " ");
+        console.log(i);
         i += 1;
     }
-    while (i <= countTo);
+    while (i < countTo);
 }
 
 
 /**
- * for loop
- * @param countTo
+ * @param {number} countTo sets the boundry imit of loop iteration
  */
 function forLoop (countTo) {
-    var i;
+    let i;
 
-    for (i=1; i <= countTo; i++) {
+    for (i=0; i < countTo; i += 1) {
         console.log(i);
     }
 }
