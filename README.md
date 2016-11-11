@@ -1,0 +1,2 @@
+# programowanie
+Szkolenia by pawelzny
