@@ -1,5 +1,4 @@
 <?php
-
 /**
  * for loop
  * @param $countTo

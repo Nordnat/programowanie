@@ -1,5 +1,3 @@
-var number = 12;
-
 /**
  * While Loop
  * @param countTo
