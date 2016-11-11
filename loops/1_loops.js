@@ -21,8 +21,7 @@ function doWhileLoop (countTo) {
     do {
         console.log(i);
         i += 1;
-    }
-    while (i < countTo);
+    } while (i < countTo);
 }
 
 
@@ -32,7 +31,7 @@ function doWhileLoop (countTo) {
 function forLoop (countTo) {
     let i;
 
-    for (i=0; i < countTo; i += 1) {
+    for (i = 0; i < countTo; i += 1) {
         console.log(i);
     }
 }

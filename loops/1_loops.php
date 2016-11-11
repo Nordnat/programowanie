@@ -4,7 +4,7 @@
  */
 function forLoop($countTo) {
     for ($i = 0; $i < $countTo; $i += 1){
-        print($i . "\n");
+        print("$i\n");
     }
 }
 
@@ -14,7 +14,7 @@ function forLoop($countTo) {
 function whileLoop($countTo) {
     $i = 0;
     while ($i < $countTo) {
-        print($i . "\n");
+        print("$i\n");
         $i += 1;
     }
 }
