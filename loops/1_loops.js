@@ -40,7 +40,6 @@ function forLoop (countTo) {
     }
 }
 
-
 forLoop(number);
 console.log('---------------------');
 whileLoop(number);
