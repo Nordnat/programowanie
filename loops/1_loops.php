@@ -1,36 +1,32 @@
 <?php
-
 /**
- * for loop
- * @param $countTo
+ * @param {number} countTo sets the boundry imit of loop iteration
  */
 function forLoop($countTo) {
-    for ($i = 1; $i <= $countTo; $i++){
-        print($i . "<br>");
+    for ($i = 0; $i < $countTo; $i += 1){
+        print("$i\n");
     }
 }
 
 /**
- * while loop
- * @param $countTo
+ * @param {number} countTo sets the boundry imit of loop iteration
  */
 function whileLoop($countTo) {
-    $i = 1;
-    while ($i <= $countTo):
-        print($i . "<br>");
-        $i++;
-    endwhile;
+    $i = 0;
+    while ($i < $countTo) {
+        print("$i\n");
+        $i += 1;
+    }
 }
 
 /**
- * do while loop
- * @param $countTo
+ * @param {number} countTo sets the boundry imit of loop iteration
  */
 function doWhileLoop($countTo) {
-    $i = 1;
+    $i = 0;
     do {
-        print($i++ . "<br>");
-    } while ($i <= $countTo);
+        print($i += 1);
+    } while ($i < $countTo - 1);
 }
 
 forLoop(12);
