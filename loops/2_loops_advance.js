@@ -8,44 +8,15 @@
  * Each loop should console.log() from 0 to limit
  */
 
-
-function twoParameterLoop(limit, offset) {
-
-}
-
-// function oneParameterLoop (limit) {
-//     let i = 0;
-//
-//     if (i < limit) {
-//         console.log(i);
-//         i += 1;
-//         if (i < limit) {
-//             console.log(i);
-//         }
-//     }
-// }
-//
-// oneParameterLoop(5);
-
-// function oneParameterLoop (limit) {
-//     let i = 0;
-//
-//     if (i < limit) {
-//         console.log(i);
-//         return oneParameterLoop(i + 1);
-//     }
-// }
-// oneParameterLoop(10);
-
-function oneParameterLoop (limit) {
-    if (limit >= 0) {
-        console.log(limit);
-        return oneParameterLoop(limit - 1);
-    } else {
-        return limit;
+/**
+ * Recursive function counting from offset to limit
+ * @param limit (number)  - the boundry limit of iteration
+ * @param offset (number) - value function will count from
+ */
+function recursiveLoop(limit, offset=0) {
+    if (offset < limit) {
+        console.log(offset);
+        recursiveLoop(limit, offset + 1);
     }
 }
-oneParameterLoop(10);
-
-
-
+recursiveLoop(10);
