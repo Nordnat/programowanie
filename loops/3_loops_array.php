@@ -24,7 +24,7 @@ function forEachLoop($array) {
  */
 function forLoop($array) {
     $arrayLength = count($array);
-    for ($i = 0; $i < $arrayLength; $i++) {
+    for ($i = 0; $i < $arrayLength; $i += 1) {
         print("$array[$i]\n");
     }
 }
@@ -37,7 +37,7 @@ function whileLoop($array) {
     $arrayLength = count($array);
     while ($i < $arrayLength) {
         print("$array[$i]\n");
-        $i++;
+        $i += 1;
     }
 }
 
