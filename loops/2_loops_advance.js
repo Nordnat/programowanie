@@ -13,7 +13,7 @@
  * @param limit (number)  - the boundry limit of iteration
  * @param offset (number) - value function will count from
  */
-function recursiveLoop (limit, offset=0) {
+function recursiveLoop(limit, offset=0) {
     if (offset < limit) {
         console.log(offset);
         recursiveLoop(limit, offset + 1);
