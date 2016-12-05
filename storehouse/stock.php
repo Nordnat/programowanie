@@ -5,7 +5,7 @@
 * Start functions for storehouse
 */
 
-$carPartsInStock = ['alternator', 'klocki hamulcowe'];
+$inStock = [];
 
 /**
  * arr (array)  - array to work on
@@ -13,15 +13,11 @@ $carPartsInStock = ['alternator', 'klocki hamulcowe'];
  */
 function addToStock ($arr, $partName) {
     array_push($arr, $partName);
-    var_dump($arr);
 }
-addToStock($carPartsInStock, 'silnik');
 
 /**
  * arr (array)  - array to work on
  */
 function takeFromStock ($arr) {
-    array_shift($arr);
-    var_dump($arr);
+    return array_shift($arr);
 }
-takeFromStock($carPartsInStock);

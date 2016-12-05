@@ -2,19 +2,15 @@
  * Start functions for storehouse
  */
 
-let carPartsInStock = ['alternator', 'klocki hamulcowe'];
+let inStock = [];
 
 /**
  * @param partName (string)
  */
 function addToStock (partName) {
-    carPartsInStock.push(partName);
+    inStock.push(partName);
 }
-addToStock('silnik');
 
 function takeFromStock () {
-    if (carPartsInStock.length > 0) {
-        carPartsInStock.shift();
-    }
+        return inStock.shift();
 }
-takeFromStock();
