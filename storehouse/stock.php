@@ -5,7 +5,7 @@
 * Start functions for storehouse
 */
 
-$inStock = [];
+$stock = [];
 
 /**
  * arr (array)  - array to work on

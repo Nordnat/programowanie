@@ -2,15 +2,15 @@
  * Start functions for storehouse
  */
 
-let inStock = [];
+let stock = [];
 
 /**
  * @param partName (string)
  */
 function addToStock (partName) {
-    inStock.push(partName);
+    stock.push(partName);
 }
 
 function takeFromStock () {
-        return inStock.shift();
+        return stock.shift();
 }
